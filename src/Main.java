@@ -21,6 +21,7 @@ public class Main {
         System.out.println("height= " + wall.getHeight());
 
         System.out.println("area= " + wall.getArea());
+        System.out.println("area= " + wall.getArea());
 
     }
 }
