@@ -2,25 +2,28 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-
     private String address;
+    private String number;
+    private Double height;
 
-
-    public Person(String firstName,String lastName,int age){
+    public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
-        this.lastName=lastName;
-        this.age= age;
+        this.lastName = lastName;
+        this.age = age;
     }
 
-    public Person(String firstName,String lastName,int age, String address){
-        this(firstName,lastName,age);
+    public Person(String firstName, String lastName, int age, String address, String number, Double height) {
+        this(firstName, lastName, age);
         this.address = address;
-
+        this.number = number;
+        this.height = height;
     }
-    public String getFirstName(){
+
+    public String getFirstName() {
         return this.firstName;
     }
-    public String getLastName(){
+
+    public String getLastName() {
         return this.lastName;
     }
 
@@ -40,11 +43,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getAge(){
+    public int getAge() {
         return this.age;
     }
 
-    public boolean isTeen(){
-        return age>=13 && age<=19;
+    public boolean isTeen() {
+        return age >= 13 && age <= 19;
     }
 }
